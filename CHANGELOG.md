@@ -1,4 +1,4 @@
 # CHANGELOG
 
-## Version 0.1.0-alpha01 (2024-01-12)
+## Version 0.1.0-alpha01 (2024-01-15)
  - Initial `alpha01` release
