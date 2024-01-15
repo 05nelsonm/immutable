@@ -1,0 +1,9 @@
+public final class io/matthewnelson/immutable/collections/Immutable {
+	public static final fun listOf (Ljava/util/Collection;)Ljava/util/List;
+	public static final fun listOf ([Ljava/lang/Object;)Ljava/util/List;
+	public static final fun mapOf (Ljava/util/Map;)Ljava/util/Map;
+	public static final fun mapOf ([Lkotlin/Pair;)Ljava/util/Map;
+	public static final fun setOf (Ljava/util/Collection;)Ljava/util/Set;
+	public static final fun setOf ([Ljava/lang/Object;)Ljava/util/Set;
+}
+

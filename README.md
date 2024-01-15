@@ -23,9 +23,25 @@ Immutability utilities for Kotlin Multiplatform
 
 ### Immutable Collections
 
+Wrapper classes that implement `Set`, `List`, and `Map` interfaces which inhibit modification via casting.
+
+Does not add any new class references, as all `Immutable` implementations are private classes.
+
+Top level accessor functions either return the `EmptySet`, `EmptyList`, `EmptyMap` objects, 
+or will copy & wrap the elements with the `Immutable` class implementation (if not already wrapped).
+
+All collections/iterators returned by `Immutable` implementation functions are also `Immutable`. 
+
 ```kotlin
 fun main() {
-    // TODO
+    immutableSetOf("This", "That")
+    immutableListOf("This", "That")
+    immutableMapOf("This" to "That")
+    
+    // toImmutable
+    setOf("This", "That").toImmutableSet()
+    listOf("This", "That").toImmutableList()
+    mapOf("This" to "That").toImmutableMap()
 }
 ```
 
