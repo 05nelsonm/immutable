@@ -18,5 +18,5 @@ plugins {
 }
 
 kmpConfiguration {
-    configureShared(publish = true) {}
+    configureShared(java9ModuleName = "io.matthewnelson.immutable.collections", publish = true) {}
 }
