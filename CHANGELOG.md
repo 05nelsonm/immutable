@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 0.1.2 (2024-03-13)
+ - Adds support for `wasmJs.browser`
+
 ## Version 0.1.1 (2024-03-10)
  - Updates Kotlin to `1.9.23`
  - Adds support for Java9 JPMS via Multi-Release jars
