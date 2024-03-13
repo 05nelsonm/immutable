@@ -39,6 +39,7 @@ fun KmpConfigurationExtension.configureShared(
         @OptIn(ExperimentalWasmDsl::class)
         wasmJs {
             target {
+                browser()
                 nodejs()
             }
         }
