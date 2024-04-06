@@ -56,6 +56,7 @@ class ImmutableListUnitTest {
 
     @Test
     fun givenImmutableList_whenSubList_thenReturnsImmutableList() {
+        assertEquals("ImmutableList", list.toImmutableList().subList(0, list.size)::class.simpleName)
         assertEquals("ImmutableList", list.toImmutableList().subList(0, 1)::class.simpleName)
         assertEquals("EmptyList", list.toImmutableList().subList(0, 0)::class.simpleName)
     }

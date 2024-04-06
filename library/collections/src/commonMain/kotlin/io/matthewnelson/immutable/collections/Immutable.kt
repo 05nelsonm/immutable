@@ -80,7 +80,12 @@ private class ImmutableList<T>(
     override fun lastIndexOf(element: T): Int = delegate.lastIndexOf(element)
     override fun listIterator(): ListIterator<T> = ImmutableListIterator(delegate.listIterator())
     override fun listIterator(index: Int): ListIterator<T> = ImmutableListIterator(delegate.listIterator(index))
-    override fun subList(fromIndex: Int, toIndex: Int): List<T> = delegate.subList(fromIndex, toIndex).toImmutableList()
+    override fun subList(fromIndex: Int, toIndex: Int): List<T> {
+        if (fromIndex == 0 && toIndex == size) return this
+        val subList = delegate.subList(fromIndex, toIndex)
+        if (subList.isEmpty()) return emptyList()
+        return ImmutableList(subList)
+    }
 }
 
 private class ImmutableSet<T>(
