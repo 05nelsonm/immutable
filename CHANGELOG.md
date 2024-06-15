@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Version 0.1.3 (2024-06-15)
+ - Updates Kotlin to `1.9.24`
+ - Minor performance improvement for `ImmutableList.subList`
+
 ## Version 0.1.2 (2024-03-13)
  - Adds support for `wasmJs.browser`
 
