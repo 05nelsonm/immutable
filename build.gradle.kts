@@ -44,8 +44,8 @@ plugins.withType<YarnPlugin> {
 
 plugins.withType<NodeJsRootPlugin> {
     the<NodeJsRootExtension>().apply {
-        nodeVersion = "21.0.0-v8-canary202309167e82ab1fa2"
-        nodeDownloadBaseUrl = "https://nodejs.org/download/v8-canary"
+        nodeVersion = "22.0.0-nightly202404032241e8c5b3"
+        nodeDownloadBaseUrl = "https://nodejs.org/download/nightly"
     }
 
     tasks.withType<KotlinNpmInstallTask>().configureEach {
