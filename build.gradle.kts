@@ -13,9 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-import org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension
-import org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootPlugin
-import org.jetbrains.kotlin.gradle.targets.js.npm.tasks.KotlinNpmInstallTask
 import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin
 import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnRootExtension
 
@@ -40,17 +37,6 @@ allprojects {
 
 plugins.withType<YarnPlugin> {
     the<YarnRootExtension>().lockFileDirectory = rootDir.resolve(".kotlin-js-store")
-}
-
-plugins.withType<NodeJsRootPlugin> {
-    the<NodeJsRootExtension>().apply {
-        nodeVersion = "22.0.0-nightly202404032241e8c5b3"
-        nodeDownloadBaseUrl = "https://nodejs.org/download/nightly"
-    }
-
-    tasks.withType<KotlinNpmInstallTask>().configureEach {
-        args.add("--ignore-engines")
-    }
 }
 
 apiValidation {
