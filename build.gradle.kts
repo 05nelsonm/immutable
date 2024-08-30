@@ -40,6 +40,9 @@ plugins.withType<YarnPlugin> {
 }
 
 apiValidation {
+    @OptIn(kotlinx.validation.ExperimentalBCVApi::class)
+    klib.enabled = true
+
     if ((findProperty("CHECK_PUBLICATION") as? String) != null) {
         ignoredProjects.add("check-publication")
     }

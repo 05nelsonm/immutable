@@ -1,0 +1,14 @@
+// Klib ABI Dump
+// Targets: [androidNativeArm32, androidNativeArm64, androidNativeX64, androidNativeX86, iosArm64, iosSimulatorArm64, iosX64, js, linuxArm64, linuxX64, macosArm64, macosX64, mingwX64, tvosArm64, tvosSimulatorArm64, tvosX64, wasmJs, wasmWasi, watchosArm32, watchosArm64, watchosDeviceArm64, watchosSimulatorArm64, watchosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <io.matthewnelson.immutable:collections>
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> (kotlin.collections/Map<#A, #B>).io.matthewnelson.immutable.collections/toImmutableMap(): kotlin.collections/Map<#A, #B> // io.matthewnelson.immutable.collections/toImmutableMap|toImmutableMap@kotlin.collections.Map<0:0,0:1>(){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?, #B: kotlin/Any?> io.matthewnelson.immutable.collections/immutableMapOf(kotlin/Array<out kotlin/Pair<#A, #B>>...): kotlin.collections/Map<#A, #B> // io.matthewnelson.immutable.collections/immutableMapOf|immutableMapOf(kotlin.Array<out|kotlin.Pair<0:0,0:1>>...){0§<kotlin.Any?>;1§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (kotlin.collections/Collection<#A>).io.matthewnelson.immutable.collections/toImmutableList(): kotlin.collections/List<#A> // io.matthewnelson.immutable.collections/toImmutableList|toImmutableList@kotlin.collections.Collection<0:0>(){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> (kotlin.collections/Collection<#A>).io.matthewnelson.immutable.collections/toImmutableSet(): kotlin.collections/Set<#A> // io.matthewnelson.immutable.collections/toImmutableSet|toImmutableSet@kotlin.collections.Collection<0:0>(){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> io.matthewnelson.immutable.collections/immutableListOf(kotlin/Array<out #A>...): kotlin.collections/List<#A> // io.matthewnelson.immutable.collections/immutableListOf|immutableListOf(kotlin.Array<out|0:0>...){0§<kotlin.Any?>}[0]
+final fun <#A: kotlin/Any?> io.matthewnelson.immutable.collections/immutableSetOf(kotlin/Array<out #A>...): kotlin.collections/Set<#A> // io.matthewnelson.immutable.collections/immutableSetOf|immutableSetOf(kotlin.Array<out|0:0>...){0§<kotlin.Any?>}[0]
