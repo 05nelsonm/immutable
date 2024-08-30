@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version 0.1.4 (2024-08-30)
+ - Fixes multiplatform metadata manifest `unique_name` parameter for
+   all source sets to be truly unique.
+ - Updates jvm `.kotlin_module` with truly unique file name.
+
 ## Version 0.1.3 (2024-06-15)
  - Updates Kotlin to `1.9.24`
  - Minor performance improvement for `ImmutableList.subList`
