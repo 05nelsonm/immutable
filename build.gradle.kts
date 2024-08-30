@@ -22,17 +22,14 @@ plugins {
 }
 
 allprojects {
-
     findProperty("GROUP")?.let { group = it }
     findProperty("VERSION_NAME")?.let { version = it }
     findProperty("POM_DESCRIPTION")?.let { description = it.toString() }
 
     repositories {
         mavenCentral()
-        google()
         gradlePluginPortal()
     }
-
 }
 
 plugins.withType<YarnPlugin> {

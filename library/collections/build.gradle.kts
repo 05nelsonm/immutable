@@ -13,17 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-import io.matthewnelson.kmp.configuration.ExperimentalKmpConfigurationApi
-
 plugins {
     id("configuration")
 }
 
 kmpConfiguration {
-    configureShared(publish = true) {
-        jvm {
-            @OptIn(ExperimentalKmpConfigurationApi::class)
-            java9ModuleInfoName = "io.matthewnelson.immutable.collections"
-        }
-    }
+    configureShared(java9ModuleName = "io.matthewnelson.immutable.collections", publish = true) {}
 }
