@@ -40,7 +40,12 @@ plugins.withType<YarnPlugin> {
 }
 
 apiValidation {
-    if ((findProperty("CHECK_PUBLICATION") as? String) != null) {
+    // Only enable when selectively enabled targets are not being passed via cli.
+    // See https://github.com/Kotlin/binary-compatibility-validator/issues/269
+    @OptIn(kotlinx.validation.ExperimentalBCVApi::class)
+    klib.enabled = findProperty("KMP_TARGETS") == null
+
+    if (findProperty("CHECK_PUBLICATION") != null) {
         ignoredProjects.add("check-publication")
     }
 }
