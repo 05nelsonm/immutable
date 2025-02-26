@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 0.2.0 (2025-02-26)
+ - Updates `kotlin` to `2.1.10`
+
 ## Version 0.1.4 (2024-08-30)
  - Fixes multiplatform metadata manifest `unique_name` parameter for
    all source sets to be truly unique.
